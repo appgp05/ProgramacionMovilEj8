@@ -1,4 +1,4 @@
-package com.example.programacionmovilej8;
+package com.svalero.ej5;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.programacionmovilej8", appContext.getPackageName());
+        assertEquals("com.svalero.ej5", appContext.getPackageName());
     }
 }

@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.programacionmovilej8'
+    namespace 'com.svalero.ej5'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.programacionmovilej8"
+        applicationId "com.svalero.ej5"
         minSdk 24
         targetSdk 34
         versionCode 1

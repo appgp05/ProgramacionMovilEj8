@@ -1,4 +1,4 @@
-package com.example.programacionmovilej8;
+package com.svalero.ej5;
 
 import org.junit.Test;
 

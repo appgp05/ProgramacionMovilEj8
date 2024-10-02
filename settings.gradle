@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ProgramacionMovilEj8"
+rootProject.name = "Ej5"
 include ':app'
