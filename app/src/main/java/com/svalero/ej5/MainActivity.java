@@ -12,6 +12,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.svalero.beans.Usuario;
+import com.svalero.datos.SeasData;
+
 public class MainActivity extends AppCompatActivity {
     private EditText edtUser;
     private Button btnEnviar;
@@ -24,13 +27,15 @@ public class MainActivity extends AppCompatActivity {
         edtUser = findViewById(R.id.edtUsuario);
         btnEnviar = (Button)findViewById(R.id.btnEnviar);
 
-            btnEnviar.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v){
-                    Intent navegarEntrePantallas = new Intent(getBaseContext(), Pantalla2Activity.class);
-                    navegarEntrePantallas.putExtra("USUARIO", edtUser.getText().toString());
-                    startActivity(navegarEntrePantallas);
-                }
+            btnEnviar.setOnClickListener((v) -> {
+                Intent navegarEntrePantallas = new Intent(getBaseContext(), Pantalla2Activity.class);
+//                navegarEntrePantallas.putExtra("USUARIO", edtUser.getText().toString());
+                Usuario miUsuario = new Usuario();
+                miUsuario.setEmail(edtUser.getText().toString());
+
+                SeasData.setUsuario(miUsuario);
+
+                startActivity(navegarEntrePantallas);
             });
     }
 }
